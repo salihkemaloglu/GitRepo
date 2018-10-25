@@ -15,6 +15,6 @@ type Item struct {
 	Count       int           `bson:"count" json:"count"`
 }
 
-func test() {
+func testMyData() {
 	fmt.Print("working")
 }
