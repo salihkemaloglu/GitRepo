@@ -1,4 +1,4 @@
-package model
+package main
 
 import (
 	"fmt"
@@ -6,4 +6,8 @@ import (
 
 func testMyData() {
 	fmt.Print("working")
+}
+
+func main() {
+	testMyData()
 }
