@@ -1,6 +1,10 @@
 package main
 
-import "gopkg.in/mgo.v2/bson"
+import (
+	"fmt"
+
+	"gopkg.in/mgo.v2/bson"
+)
 
 type Item struct {
 	ID          bson.ObjectId `bson:"_id" json:"id" `
@@ -9,4 +13,8 @@ type Item struct {
 	Description string        `bson:"description" json:"description"`
 	ItemId      string        `bson:"-" json:"-"`
 	Count       int           `bson:"count" json:"count"`
+}
+
+func test() {
+	fmt.Print("working")
 }
